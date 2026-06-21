@@ -1,0 +1,52 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-visual { width: 36%; min-width: 36%; }
+.mode-portrait .sl-visual { width: 100%; height: 38%; min-height: 38%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex w-full h-full">
+
+    <!-- LEFT/MAIN: Narrative -->
+    <div class="flex-1 flex flex-col justify-center gap-7 p-12">
+
+      <!-- Problem -->
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <div class="w-1 h-5 rounded-full bg-rose-500"></div>
+          <span class="text-xs font-bold tracking-widest uppercase text-rose-600">The Problem</span>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 leading-snug">Your team is a data-entry machine.</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Forms, messages, and documents pile up — each one needing a human to read, interpret, and transfer information into the right system. Repetitive, error-prone, and quietly expensive at scale.
+        </p>
+      </div>
+
+      <div class="border-t border-slate-200"></div>
+
+      <!-- Solution -->
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <div class="w-1 h-5 rounded-full bg-indigo-500"></div>
+          <span class="text-xs font-bold tracking-widest uppercase text-indigo-600">The Solution</span>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 leading-snug">AI agents that read, decide, and act.</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          An intelligent agent layer intercepts your incoming data, classifies each input, extracts what matters, routes it to the right destination, and updates your records — all automatically, for every routine case. Exceptions surface for human review.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Visual -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Abstract%20visualization%20of%20paper%20documents%20and%20forms%20flowing%20into%20a%20glowing%20AI%20processing%20network%2C%20data%20streaming%20smoothly%20through%20intelligent%20nodes%2C%20indigo%20and%20white%20editorial%20digital%20art%2C%20no%20text"
+        alt=""
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
